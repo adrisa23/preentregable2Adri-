@@ -5,69 +5,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amarellus | SEO LAB</title>
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <!-- LINK CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">+
+        rel="stylesheet">
 
 </head>
 
 <body class="Montserrat">
+    <div class="Newsletter">
+        <p> Sumate al Newsletter y Obtené una <strong>Asesoría 100% Gratuita</strong>
+        </p>
+    </div>
+
     <header class="header">
-        <div class="logo">
-            <img src="../imgs/amerellus-logo.png" alt="amarellus seo lab" width="150px">
-
-        </div>
-        <div>
-
+        <div class="container">
+            <div class="logo">
+                <img src="../imgs/amerellus-logo.png" alt="amarellus seo lab" width="150px">
+            </div>
             <nav class="nav">
-                <ul class="menu">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="html/servicios.html">Servicios</a>
-                    </li>
-                    <li>
-                        <a href="html/nosotros.html">Nosotros</a>
-                    </li>
-                    <li>
-                        <a href="html/blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="html/contacto.html">Contacto</a>
-                    </li>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="html/servicios.html">Servicios</a></li>
+                    <li><a href="html/nosotros.html">Nosotros</a></li>
+                    <li><a href="html/blog.html">Blog</a></li>
+                    <li><a href="html/contacto.html">Contacto</a></li>
                 </ul>
-
             </nav>
-            <main>
-                <section>
-                    <div class="wrapper">
-                        <h1 class="h1">Tu Agencia SEO que Convierte</h1>
-                    </div>
-                    <div class="wrapper">
-                        <button><a href="https://wa.link/hktj46" class="whatsapp-button"
-                                target="_blank">¡Hablemos!</a></button>
-                    </div>
         </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="wrapper">
+                <h1 class="h1">Tu Agencia SEO que Convierte</h1>
+            </div>
+            <div class="wrapper">
+                <a href="https://wa.link/hktj46" class="whatsapp-button" target="_blank">¡Hablemos!</a>
+            </div>
         </section>
-        </main>
+    </main>
     </header>
 
     <!--Section-->
     <main>
-        <section>
-            <div class="text-box">
-                <h2>SEO LAB</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
+        <section class="seo-lab">
 
-            </div>
-            <div class="img-banner">
-                <img src="imgs/banner amarellus.jpg" alt="banner amarellus">
+            <div class="content container">
+                <div class="text-box">
+                    <h2 class="h2-seo-lab">SEO LAB</h2>
+                    <p class="p1">En Amarellus SEO LAB, nos apasiona ayudar a negocios como el tuyo a crecer y
+                        destacar en el
+                        mundo digital. Nuestro equipo de <strong>expertos en SEO</strong> está aquí para llevar tu
+                        presencia en línea
+                        al siguiente nivel a través de estrategias personalizadas y efectivas.</p>
+
+                    <p class="p2">Nuestro enfoque personalizado garantiza que tu negocio reciba la atención y las
+                        estrategias
+                        que necesita para triunfar. Ya sea que busques mejorar tu visibilidad local, <strong>
+                            aumentar el
+                            tráfico orgánico</strong> o generar más conversiones, estamos aquí para ayudarte en cada
+                        paso del
+                        camino.</p>
+                    <div class="wrapper">
+                        <a href="servicios.html" class="services-button" target="_blank">Conoce Más</a>
+                    </div>
+                </div>
+                <div class="img-container">
+                    <img src="imgs/AdobeStock_757065785-removebg-preview.png" alt="posicionamiento seo"
+                        class="img-banner">
+                </div>
             </div>
         </section>
 
@@ -76,7 +90,7 @@
     <main>
         <section>
             <div class="marcas">
-                <h3>Marcas que Cofían en Nosotros</h3>
+                <h3 class="marcas">Marcas que Confían en Nosotros</h3>
             </div>
             <div class="clients-bar">
 
@@ -91,50 +105,52 @@
             <main>
                 <section>
                     <div class="gallery">
-                        <h2>Nuestros Servicios</h2>
+                        <h2 class="servicios-home">Nuestros Servicios</h2>
 
-                        <img src="imgs/igor-miske-Px3iBXV-4TU-unsplash.jpg" alt="Auditoría SEO">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat.</p>
-
-                        <img src="imgs/campaign-creators-pypeCEaJeZY-unsplash.jpg" alt="seo on page">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat.</p>
-
-                        <img src="imgs/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg" alt="seo content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat.</p>
-
-                        <img src="imgs/guia-linkbuilding-2023.jpg" alt="seo off page">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat.</p>
-
-                        <img src="imgs/photo-1548345680-f5475ea5df84.avif" alt="seo tecnico">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat.</p>
-
-                        <img src="imgs/photo-1600469984476-c713650f1b1b.avif" alt="local seo">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat.</p>
-
+                        <div class="grid-container">
+                            <div class="grid-item">
+                                <img src="imgs/servicios 1.png" alt="Auditoría SEO">
+                                <h3 class="on-page">SEO On Page</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div class="grid-item">
+                                <img src="imgs/servicios 2.png" alt="seo on page">
+                                <h3 class="audit">Auditoría SEO</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div class="grid-item">
+                                <img src="imgs/servicios 3.png" alt="seo content">
+                                <h3 class="seo-content">SEO Content</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div class="grid-item">
+                                <img src="imgs/servicios 4.png" alt="seo off page">
+                                <h3 class="off-page">SEO Off Page</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div class="grid-item">
+                                <img src="imgs/servicios 5.png" alt="seo tecnico">
+                                <h3 class="tecnico">SEO Técnico</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div class="grid-item">
+                                <img src="imgs/servicios 6.png" alt="local seo">
+                                <h3 class="local">SEO Local</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
@@ -198,6 +214,13 @@
                     <p>© Designed by Amarellus SEO Lab. All Rights Reserved. Terms of Service and Privacy Policy.</p>
                 </footer>
             </div>
+            <!--scripts de boostrap-->
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+                integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+                integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+                crossorigin="anonymous"></script>
 </body>
 
 </html>
