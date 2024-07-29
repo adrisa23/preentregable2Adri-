@@ -540,6 +540,11 @@ section {
 
     .hamburger{
         display: block;
+        width: 35px;
+    }
+
+    .hamburger img {
+        width: 30px;
     }
 
     .cerrar {

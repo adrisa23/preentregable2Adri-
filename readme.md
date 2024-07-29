@@ -1,0 +1,1 @@
+Mi proyecto es un sitio web para una agencia de SEO, que consta de 5 secciones, css y html avanzado, grids, flexbox, boostrap y responsive.
