@@ -1,0 +1,11 @@
+{
+  "name": "preentregrable-1-adri---copia---copia",
+  "version": "1.0.0",
+  "description": "Mi proyecto es un sitio web para una agencia de SEO, que consta de 5 secciones, css y html avanzado, grids, flexbox, boostrap y responsive.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
