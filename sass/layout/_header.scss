@@ -1,0 +1,99 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background-color: white;
+}
+.Newsletter {
+  background-color: #E8AF09;
+  text-align: center;
+  font-size: 14px;
+  padding: 1%;
+  padding-bottom: 0.1%;
+  
+  p {
+    background-color: #E8AF09;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.nav {
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+    li {
+      display: flex;
+      align-items: center;
+      
+      a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        font-weight: bold;
+        transition: color 0.3s;
+        
+        &:hover {
+          color: #E8AF09;
+          
+        }
+      }
+    }
+  }
+}
+// Estilos del banner hero
+.hero {
+  background: linear-gradient(rgba(170, 172, 175, 0.50), rgba(170, 172, 175, 0.50)), url(../imgs/team.avif);
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  padding: 60px 20px;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .wrapper {
+    margin-bottom: 20px;
+  }
+
+  .h1 {
+    font-size: 70px;
+    color: #333;
+    line-height: 1.2;
+  }
+}
+
+// Botón de WhatsApp
+.whatsapp-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #E8AF09;
+  border: none;
+  border-radius: 7px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  outline: none;
+
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:hover {
+    background-color: #E8AF09;
+  }
+}

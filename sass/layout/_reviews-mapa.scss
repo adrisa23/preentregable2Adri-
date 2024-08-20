@@ -1,0 +1,104 @@
+.reviews {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 40px 0;
+  }
+  
+  .reviews-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .review-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+  
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px; // Espacio entre la imagen y el texto
+    }
+  
+    p {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 10px;
+      line-height: 1.5;
+      text-align: right;
+      flex-grow: 1;
+    }
+  }
+  
+  .review-item h3 {
+    font-size: 18px;
+    color: #E8AF09;
+    margin-top: 0;
+    font-weight: bold;
+    text-align: right;
+  }
+  
+  /* Mapa */
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Sección Encuéntranos */
+  .encuentranos {
+    font-size: 70px;
+    margin: 95px 0 80px;
+    text-align: center;
+  }
+  
+  .mapouter {
+    position: relative;
+    text-align: right;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+  }
+  
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 100%;
+    width: 100%;
+  }
+  
+  #gmap_canvas {
+    height: 100%;
+    width: 100%;
+    border: 0;
+  }
