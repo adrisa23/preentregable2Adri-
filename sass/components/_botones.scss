@@ -1,0 +1,51 @@
+ @mixin botones {
+    background-color: #E8AF09;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #E8AF09;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    outline: none;
+ }
+ 
+ // Botón de WhatsApp
+.whatsapp-button {
+    @include botones;
+  
+    &:focus,
+    &:active {
+      outline: none;
+      box-shadow: none;
+    }
+  
+    &:hover {
+      background-color: #E8AF09;
+    }
+  }
+
+  .services-button {
+    @include botones;
+  
+    &:hover {
+      background-color: darken(#E8AF09, 10%); // Efecto hover en SASS
+    }
+  }
+
+  .cta-button {
+    @include botones;
+
+    &:hover {
+        background-color: #D79F0E;
+    }
+}
+.contact-button {
+    @include botones;
+
+    &:hover {
+      background-color: #d99708;
+    }
+  }

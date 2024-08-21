@@ -1,0 +1,139 @@
+
+/* Estilos para pantallas pequeñas (tablets y móviles) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero .h1 {
+        font-size: 50px;
+    }
+
+    .h2-seo-lab {
+        font-size: 50px;
+    }
+
+    .servicios-home {
+        font-size: 50px;
+    }
+
+    .encuentranos {
+        font-size: 50px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .review-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-register {
+        max-width: 100%;
+    }
+
+    .contenedor-forms h2 {
+        font-size: 50px;
+        margin-right: 0;
+    }
+
+    .header {
+        padding: 10px 0;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .clients-bar {
+        flex-direction: column;
+    }
+}
+
+/* Estilos para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    .hero .h1,
+    .h2-seo-lab,
+    .servicios-home,
+    .encuentranos {
+        font-size: 40px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .nav ul li a {
+        font-size: 14px;
+    }
+
+    .grid-item h3 {
+        font-size: 16px;
+    }
+
+    .reviews-title {
+        font-size: 28px;
+    }
+}
+/*Mediaqueries Blog*/
+
+@media (max-width: 768px) {
+    .grid-articulos {
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+  
+    .menu-categorias {
+      li {
+        margin: 0 10px;
+      }
+    }
+  
+    .blog {
+      padding: 40px 0;
+    }
+  
+    .contenido {
+      padding: 15px;
+    }
+  
+    .categorias,
+    .articulos {
+      h2 {
+        font-size: 14px;
+      }
+    }
+  }
+  
+  /* Para pantallas muy pequeñas (móviles) */
+  @media (max-width: 480px) {
+    .grid-articulos {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    .menu-categorias {
+      li {
+        margin: 0 5px;
+      }
+    }
+  
+    .blog {
+      padding: 20px 0;
+    }
+  
+    .contenido {
+      padding: 10px;
+    }
+  
+    .categorias,
+    .articulos {
+      h2 {
+        font-size: 12px;
+        margin-bottom: 30px;
+      }
+    }
+  }
