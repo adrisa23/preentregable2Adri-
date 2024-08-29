@@ -1,82 +1,109 @@
 
 /* Estilos para pantallas pequeñas (tablets y móviles) */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
 
-    .hero .h1 {
-        font-size: 50px;
-    }
+  .hamburger{
+      display: block;
+      width: 35px;
+  }
 
-    .h2-seo-lab {
-        font-size: 50px;
-    }
+  .hamburger img {
+      width: 30px;
+  }
 
-    .servicios-home {
-        font-size: 50px;
-    }
+  .cerrar {
+      display: block;
+  }
 
-    .encuentranos {
-        font-size: 50px;
-    }
+  .nav {
+      display: none;
+  }
 
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
+  .nav {
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #5f5b5b;
+      padding: 2rem;
+      box-shadow: 0 0 0 100vmax rgba(12, 12, 12, 0.5);
+      
+      
+  }
 
-    .review-grid {
-        grid-template-columns: 1fr;
-    }
+  .nav.visible {
+      opacity: 1;
+      align-items: end;
+  }
 
-    .form-register {
-        max-width: 100%;
-    }
 
-    .contenedor-forms h2 {
-        font-size: 50px;
-        margin-right: 0;
-    }
+  .nav ul {
+      flex-direction: column;
+      align-items: end;
+  }
 
-    .header {
-        padding: 10px 0;
-    }
+  .nav ul li {
+      margin: 10px 0;
+  }
 
-    .nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .hero .h1 {
+      font-size: 50px;
+  }
 
-    .clients-bar {
-        flex-direction: column;
-    }
+  .grid-container {
+      grid-template-columns: 1fr; /* One column on smaller screens */
+  }
+
+  .servicios-home,
+  .h2-seo-lab {
+      font-size: 40px;
+  }
+  
+  .clients-bar img {
+      max-width: 80px; /* Smaller logo on mobile */
+  }
+  
+  .whatsapp-button,
+  .services-button {
+      width: 100%; /* Full-width buttons */
+  }
 }
 
-/* Estilos para pantallas muy pequeñas (móviles) */
 @media (max-width: 480px) {
-    .hero .h1,
-    .h2-seo-lab,
-    .servicios-home,
-    .encuentranos {
-        font-size: 40px;
-    }
+  .hero {
+      padding: 40px 10px;
+  }
 
-    .container {
-        width: 100%;
-    }
+  .hero .h1 {
+      font-size: 30px;
+  }
 
-    .nav ul li a {
-        font-size: 14px;
-    }
+  .grid-item {
+      padding: 15px;
+  }
 
-    .grid-item h3 {
-        font-size: 16px;
-    }
+  .grid-item h3 {
+      font-size: 16px;
+  }
 
-    .reviews-title {
-        font-size: 28px;
-    }
+  .grid-item p {
+      font-size: 12px;
+  }
+  
+  .footer {
+      font-size: 14px; 
+  }
+  
 }
 /*Mediaqueries Blog*/
 
@@ -108,32 +135,3 @@
     }
   }
   
-  /* Para pantallas muy pequeñas (móviles) */
-  @media (max-width: 480px) {
-    .grid-articulos {
-      grid-template-columns: 1fr;
-      gap: 10px;
-    }
-  
-    .menu-categorias {
-      li {
-        margin: 0 5px;
-      }
-    }
-  
-    .blog {
-      padding: 20px 0;
-    }
-  
-    .contenido {
-      padding: 10px;
-    }
-  
-    .categorias,
-    .articulos {
-      h2 {
-        font-size: 12px;
-        margin-bottom: 30px;
-      }
-    }
-  }
