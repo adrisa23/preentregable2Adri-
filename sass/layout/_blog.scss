@@ -1,0 +1,99 @@
+.blog {
+    position: relative; 
+    text-align: center; 
+    margin-bottom: 40px; 
+    padding: 60px 0; 
+}
+
+.video-background {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    z-index: -1; 
+    overflow: hidden; 
+}
+
+.video-background video {
+    min-width: 100%; 
+    min-height: 100%; 
+    object-fit: cover; 
+}
+
+.contenido {
+    position: relative; 
+    z-index: 1; 
+    color: white; 
+    padding: 20px; 
+}
+
+.categorias, .articulos {
+    margin: 40px 0; 
+    text-align: center; 
+    
+}
+.articulos h2{
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+/* Estilos para el menú de categorías */
+.menu-categorias {
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin-top: 40px;
+}
+
+.menu-categorias li {
+    margin: 0 15px; 
+}
+
+.menu-categorias a {
+    text-decoration: none; 
+    color: #daba05; 
+    font-weight: bold; 
+    transition: color 0.3s; 
+    
+}
+
+.menu-categorias a:hover {
+    color: #b39200; 
+}
+
+/* Estilos para artículos */
+.grid-articulos {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 0 20px; 
+}
+
+.articulo {
+    border: 1px solid #ddd; 
+    padding: 15px; 
+    border-radius: 8px; 
+    background-color: #f9f9f9; 
+    text-align: left; 
+}
+
+.articulo img {
+    max-width: 100%; 
+    border-radius: 8px; 
+}
+
+/* Media Queries para adaptabilidad */
+@media (max-width: 768px) {
+    .grid-articulos {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-articulos {
+        grid-template-columns: 1fr; 
+    }
+}
