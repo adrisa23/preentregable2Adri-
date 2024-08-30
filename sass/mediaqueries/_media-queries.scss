@@ -1,59 +1,37 @@
 
-/* Estilos para pantallas pequeñas (tablets y móviles) */
+// Responsive styles
 @media (max-width: 768px) {
   .header {
       flex-direction: column;
       align-items: flex-start;
   }
 
-  .hamburger{
-      display: block;
-      width: 35px;
-  }
-
-  .hamburger img {
-      width: 30px;
+  .hamburger {
+      display: flex;
   }
 
   .cerrar {
       display: block;
+      margin-bottom: 20px;
   }
 
   .nav {
-      display: none;
+      @at-root {
+          #menu-toggle:checked ~ .nav {
+              display: flex;
+              opacity: 1;
+              visibility: visible;
+          }
+      }
   }
-
-  .nav {
-      opacity: 0;
-      visibility: hidden;
-      display: flex;
-      flex-direction: column;
-      align-items: end;
-      gap: 1rem;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      background-color: #5f5b5b;
-      padding: 2rem;
-      box-shadow: 0 0 0 100vmax rgba(12, 12, 12, 0.5);
-      
-      
-  }
-
-  .nav.visible {
-      opacity: 1;
-      align-items: end;
-  }
-
 
   .nav ul {
       flex-direction: column;
       align-items: end;
-  }
 
-  .nav ul li {
-      margin: 10px 0;
+      li {
+          margin: 10px 0;
+      }
   }
 
   .hero .h1 {
@@ -61,21 +39,21 @@
   }
 
   .grid-container {
-      grid-template-columns: 1fr; /* One column on smaller screens */
+      grid-template-columns: 1fr;
   }
 
   .servicios-home,
   .h2-seo-lab {
       font-size: 40px;
   }
-  
+
   .clients-bar img {
-      max-width: 80px; /* Smaller logo on mobile */
+      max-width: 80px;
   }
-  
+
   .whatsapp-button,
   .services-button {
-      width: 100%; /* Full-width buttons */
+      width: 100%;
   }
 }
 
@@ -99,39 +77,194 @@
   .grid-item p {
       font-size: 12px;
   }
-  
+
   .footer {
-      font-size: 14px; 
+      font-size: 14px;
   }
-  
 }
 /*Mediaqueries Blog*/
 
 @media (max-width: 768px) {
-    .grid-articulos {
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
+  .grid-articulos {
+      grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-articulos {
+      grid-template-columns: 1fr; 
+  }
+}
+
+/*Mediaqueries Nosotros*/
+// Media Queries
+@media (max-width: 768px) {
+  .header {
+    padding: 20px;
+    
+    .header-top {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-  
-    .menu-categorias {
-      li {
-        margin: 0 10px;
-      }
+
+    .header-logo {
+      margin-left: 0;
+      margin-bottom: 10px;
     }
-  
-    .blog {
-      padding: 40px 0;
+
+    .header-content {
+      flex-direction: column;
     }
-  
-    .contenido {
-      padding: 15px;
+
+    .header-item {
+      margin: 10px 0;
     }
-  
-    .categorias,
-    .articulos {
-      h2 {
-        font-size: 14px;
+  }
+
+  .nosotros {
+    padding: 20px;
+    h2 {
+      font-size: 30px;
+    }
+  }
+
+  .team-section {
+    padding: 20px;
+    .team-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .team-member {
+      .member-image {
+        width: 80px;
+        height: 80px;
       }
     }
   }
+
+  .reason-why {
+    padding: 20px;
+    max-width: 100%;
+    box-shadow: none;
+
+    h2 {
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    padding: 30px;
+    
+    .header-top {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-logo {
+      margin-left: 10px;
+    }
+
+    .header-content {
+      flex-direction: column;
+    }
+
+    .header-item {
+      margin: 10px 20px;
+    }
+  }
+
+  .nosotros {
+    padding: 30px;
+    h2 {
+      font-size: 40px;
+    }
+  }
+
+  .team-section {
+    padding: 30px;
+    .team-container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+    .team-member {
+      .member-image {
+        width: 90px;
+        height: 90px;
+      }
+    }
+  }
+
+  .reason-why {
+    padding: 30px;
+    max-width: 90%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+ 
+    .header-logo {
+      margin-left: 10px;
+    }
+
+    .header-content {
+      flex-direction: row;
+    }
+
+    .header-item {
+      margin: 0 20px;
+    }
+  }
+
+  .nosotros {
+    padding: 40px;
+    h2 {
+      font-size: 50px;
+    }
+  }
+
+  .team-section {
+    padding: 40px;
+    .team-container {
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+    }
+    .team-member {
+      .member-image {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+
+  .reason-why {
+    padding: 40px;
+    max-width: 800px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
   
