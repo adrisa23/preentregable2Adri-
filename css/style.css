@@ -19,10 +19,9 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
   background-color: white;
+  padding: 20px 0;
 }
 
 .container {
@@ -414,25 +413,31 @@ section {
   background-color: #333;
   color: white;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer .footer-content {
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .footer .footer-logo {
-  align-self: flex-start;
-  margin-bottom: 10px;
+  flex: 1;
+  display: flex;
 }
 .footer .footer-menu {
-  margin: 20px 0;
-  align-self: flex-end;
+  flex: 2;
+  display: flex;
+  justify-content: center;
 }
 .footer .footer-menu ul {
   list-style-type: none;
   padding: 0;
-  text-align: right;
+  text-align: center;
 }
 .footer .footer-menu ul li {
   margin: 5px 0;
@@ -440,6 +445,7 @@ section {
 .footer .footer-designed {
   font-size: 14px;
   margin: 10px 0;
+  text-align: center;
 }
 .footer p {
   margin: 10px 0;
@@ -454,7 +460,7 @@ section {
 
 .social-media {
   margin: 15px 0;
-  align-self: flex-end;
+  text-align: center;
 }
 .social-media a {
   margin: 0 10px;
@@ -1475,6 +1481,49 @@ h3 {
 @media (max-width: 480px) {
   .grid-articulos {
     grid-template-columns: 1fr;
+  }
+}
+/*Forms*/
+@media (max-width: 1200px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    padding: 15px;
+    gap: 15px;
+  }
+  .contenedor-forms {
+    padding: 15px;
+  }
+  .contenedor-forms h2 {
+    font-size: 50px;
+    margin-right: 10%;
+  }
+  .form-register {
+    width: 300px;
+    padding: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .main {
+    padding: 10px;
+    gap: 10px;
+  }
+  .contenedor-forms {
+    padding: 10px;
+  }
+  .contenedor-forms h2 {
+    font-size: 30px;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .form-register {
+    width: 100%;
+    padding: 10px;
+    align-items: center;
   }
 }
 
