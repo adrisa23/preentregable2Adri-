@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios | Amarellus SEO</title>
     <!--Boostrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -17,20 +16,43 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- SEO -->
+    <title>Nuestros Servicios SEO | Amarellus SEO</title>
+    <meta name="description"
+        content="Explora los servicios de SEO que ofrecemos en Amarellus SEO LAB. Desde SEO técnico hasta SEO local, tenemos todo lo que necesitas para crecer online.">
+    <meta name="keywords" content="seo, posicionamiento web, agencia seo, marketing digital">
+    <!-- Favicon -->
+    <link rel="icon" href="./imgs/icono1.png" type="image/amarellus-icon">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contactanos | Amarellus SEO LAB">
+    <meta property="og:description" content="Descubre los servicios SEO de Amarellus SEO LAB para impulsar tu negocio.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.amarellus-seolab.com/home">
+    <!-- Autor de la página -->
+    <meta name="author" content="Amarellus SEO LAB">
 </head>
 
 <body>
-        <div class="Newsletter-services">
+    <div class="Newsletter-services">
+    </div>
+    <header class="header-services">
+        <div class="Newsletter">
             <p> Sumate al Newsletter y Obtené una <strong>Asesoría 100% Gratuita</strong>
             </p>
         </div>
-        <header class="header-services">
-            <div>
-                <div class="container">
-                    <div class="logo-services">
-                        <img src="../imgs/amerellus-logo.png" alt="amarellus seo lab" width="150px">
-                    </div>
-                    <nav class="nav-services">
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <img src="../imgs/amerellus-logo.png" alt="Amarellus SEO LAB" width="150px">
+                </div>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+                <div class="hamburger" id="hamburger">
+                    <img src="../imgs/hamburguesa.png" alt="menu hamburguesa">
+                </div>
+                <nav class="nav">
+                    <label for="menu-toggle" class="cerrar">Cerrar</label>
+                    <ul id="nav-links">
                         <ul>
                             <li><a href="../index.html">Home</a></li>
                             <li><a href="servicios.html">Servicios</a></li>
@@ -38,8 +60,8 @@
                             <li><a href="blog.html">Blog</a></li>
                             <li><a href="contacto.html">Contacto</a></li>
                         </ul>
-                    </nav>
-                </div>
+                </nav>
+            </div>
         </header>
         <section>
             <div id="carouselExample" class="carousel slide">
@@ -105,29 +127,46 @@
                 <h2>Mejora tu Posicionamiento Web</h2>
                 <div><a href="#" class="cta-button">¡Hablemos!</a></div>
                 <div class="grid-container">
-                    <div class="grid-item">
+                    <div class="grid-item" data-aos="zoom-in">
                         <img src="../imgs/rendimiento.png" alt="rendimiento" class="service-image">
                         <h3>Rankea Más</h3>
                         <p>En el SEO Lab te ayudamos a alcanzar las primeras posiciones en los motores de búsqueda,
                             mejorando tu visibilidad y atrayendo más clientes potenciales.</p>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item" data-aos="zoom-in">
                         <img src="../imgs/trafico.png" alt="trafico" class="service-image">
                         <h3>Mejora tu Tráfico</h3>
                         <p>En Amarellus SEO LAB incrementamos el tráfico orgánico de tu sitio web mediante estrategias
                             SEO efectivas, asegurando un flujo constante de visitantes cualificados.</p>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item" data-aos="zoom-in">
                         <img src="../imgs/ux.png" alt="user experience" class="service-image">
                         <h3>User Experience</h3>
                         <p>Optimiza la experiencia del usuario con nosotros. En el SEO Lab mejoramos la navegación y
                             usabilidad de tu sitio web para que tus visitantes disfruten cada interacción.</p>
                     </div>
-                    <div class="grid-item">
+                    <div class="grid-item" data-aos="zoom-in">
                         <img src="../imgs/1434090.png" alt="rapidez" class="service-image">
                         <h3>Mejora la Rapidez</h3>
                         <p>La velocidad de tu sitio web es crucial. En Amarellus SEO LAB optimizamos el tiempo de carga
                             para ofrecer una experiencia rápida y eficiente, reduciendo la tasa de rebote.</p>
+                    </div>
+                    <div class="grid-item" data-aos="zoom-in">
+                        <img src="../imgs/png-transparent-computer-icons-geo-fence-gps-navigation-systems-environment-icon-heart-share-icon-gps-navigation-systems.png"
+                            alt="rapidez" class="service-image">
+                        <h3>Posiciona Localmente</h3>
+                        <p>En Amarellus SEO LAB, potenciamos tu visibilidad local con estrategias de SEO específicas
+                            para que tu negocio destaque en las búsquedas de tu área. Optimizamos tu presencia en Google
+                            My Business y mejoramos el contenido local para atraer a clientes potenciales cerca de ti.
+                        </p>
+                    </div>
+                    <div class="grid-item" data-aos="zoom-in">
+                        <img src="../imgs/png-transparent-computer-icons-content-vision-and-mission-angle-text-rectangle.png"
+                            alt="rapidez" class="service-image">
+                        <h3>Contenido que Enamora</h3>
+                        <p>Nuestro contenido va más allá de informar; está diseñado para cautivar y conectar. Cada pieza
+                            que creamos está pensada para resonar profundamente con tu audiencia y dejar una impresión
+                            duradera.</p>
                     </div>
                 </div>
             </section>
@@ -144,11 +183,11 @@
                                 técnicos, contenido y enlaces, proporcionando un informe detallado con recomendaciones
                                 personalizadas para optimizar tu estrategia SEO.</p>
                         </div>
-                        <div class="services-image">
+                        <div class="services-image" data-aos="flip-right">
                             <img src="../imgs/como realizar SEO.webp" alt="Servicio 1">
                         </div>
                     </div>
-                    <div class="services-item">
+                    <div class="services-item" data-aos="flip-left">
                         <div class="services-image">
                             <img src="../imgs/Cover-Seo-on-page-Alicia-Welow.jpg" alt="Servicio 2">
                         </div>
@@ -169,11 +208,11 @@
                                 My Business, obteniendo reseñas positivas y asegurando que tu negocio sea fácilmente
                                 encontrado por clientes cercanos que buscan tus servicios.</p>
                         </div>
-                        <div class="services-image">
+                        <div class="services-image" data-aos="flip-right">
                             <img src="../imgs/photo-1548345680-f5475ea5df84.avif" alt="Servicio 3">
                         </div>
                     </div>
-                    <div class="services-item">
+                    <div class="services-item"data-aos="flip-left">
                         <div class="services-image">
                             <img src="../imgs/seo tecnico.webp" alt="Servicio 4">
                         </div>
@@ -195,11 +234,11 @@
                                 aseguramos de que tu contenido no solo sea relevante y valioso, sino también
                                 perfectamente optimizado para los motores de búsqueda.</p>
                         </div>
-                        <div class="services-image">
+                        <div class="services-image"data-aos="flip-right">
                             <img src="../imgs/seo content.webp" alt="Servicio 5">
                         </div>
                     </div>
-                    <div class="services-item">
+                    <div class="services-item" data-aos="flip-left">
                         <div class="services-image">
                             <img src="../imgs/guia-linkbuilding-2023.jpg" alt="Servicio 6">
                         </div>
@@ -220,59 +259,64 @@
 
             <main>
                 <section class="contenedor-forms">
-                        <div class="wrapper">
-                            <div class="h2">
-                                <h2>HOLA ¡HABLEMOS!</h2>
-                            </div>
-                            <div class="form-register">
-                                <input class="controls" type="text" name="nombres" id="nombres"
-                                    placeholder="Ingresa tu Nombre">
-                                <input class="controls" type="text" name="telefono" id="telefonos"
-                                    placeholder="Ingresa tu Telefono">
-                                <input class="controls" type="email" name="email" id="email"
-                                    placeholder="Ingresa tu Email">
-                                <input class="controls" type="text" name="mensaje" id="mensaje"
-                                    placeholder="Ingresa tu Mensaje">
-                                <input class="controls" type="submit" value="Enviar">
+                    <div class="wrapper">
+                        <div class="h2" data-aos="zoom-in">
+                            <h2>HOLA ¡HABLEMOS!</h2>
+                        </div>
+                        <div class="form-register">
+                            <input class="controls" type="text" name="nombres" id="nombres"
+                                placeholder="Ingresa tu Nombre">
+                            <input class="controls" type="text" name="telefono" id="telefonos"
+                                placeholder="Ingresa tu Telefono">
+                            <input class="controls" type="email" name="email" id="email" placeholder="Ingresa tu Email">
+                            <input class="controls" type="text" name="mensaje" id="mensaje"
+                                placeholder="Ingresa tu Mensaje">
+                            <input class="controls" type="submit" value="Enviar">
                         </div>
                 </section>
             </main>
-    <div class="footer">
-        <footer>
-            <div class="footer-content">
-                <div class="footer-top"></div>
-                <img src="../imgs/amarellus white.png" alt="logo seo lab" width="100px">
-                <nav class="footer-menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="nosotros.html">Nosotros</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
+            <div class="footer">
+                <footer>
+                    <div class="footer-content">
+                        <div class="footer-top"></div>
+                        <img src="../imgs/amarellus white.png" alt="logo seo lab" width="100px">
+                        <nav class="footer-menu">
+                            <ul>
+                                <li><a href="../index.html">Home</a></li>
+                                <li><a href="servicios.html">Servicios</a></li>
+                                <li><a href="nosotros.html">Nosotros</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contacto.html">Contacto</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="social-media">
+                            <a href="https://facebook.com" target="_blank">Facebook</a>
+                            <a href="https://twitter.com" target="_blank">Twitter</a>
+                            <a href="https://instagram.com" target="_blank">Instagram</a>
+                            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                        </div>
+                        <div class="copyright">
+                            <p>© Designed by Amarellus SEO Lab. All Rights Reserved.</p>
+                            <p><a href="/terms-of-service">Terms of Service</a> | <a href="/privacy-policy">Privacy
+                                    Policy</a></p>
+                        </div>
+                    </div>
+                </footer>
             </div>
-            <div class="footer-bottom"> 
-                <div class="social-media">
-                    <a href="https://facebook.com" target="_blank">Facebook</a>
-                    <a href="https://twitter.com" target="_blank">Twitter</a>
-                    <a href="https://instagram.com" target="_blank">Instagram</a>
-                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                </div>
-                <div class="copyright">
-                <p>© Designed by Amarellus SEO Lab. All Rights Reserved.</p>
-                <p><a href="/terms-of-service">Terms of Service</a> | <a href="/privacy-policy">Privacy Policy</a></p>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <section>
-        <!--scripts de boostrap-->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-            crossorigin="anonymous"></script>
+            <section>
+                <!--scripts de boostrap-->
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+                    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+                    crossorigin="anonymous"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+                    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+                    crossorigin="anonymous"></script>
+                <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                <script>
+                    AOS.init();
+                </script>
 </body>
+
 </html>
