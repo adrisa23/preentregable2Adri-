@@ -454,43 +454,67 @@ section {
     color: white;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column; // Organiza los elementos en columnas
+    align-items: center; // Centra los elementos horizontalmente
+    width: 100%;
 
     .footer-content {
-        max-width: 1200px;
-        margin: 0 auto;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between; // Espacio entre el logo y el menú
         align-items: center;
         width: 100%;
+        max-width: 1200px;
+        margin-bottom: 20px; // Espacio debajo del contenido
     }
 
     .footer-logo {
-        flex: 1;
         display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: flex-start; // Alinea el logo a la izquierda
     }
 
     .footer-menu {
         flex: 2;
         display: flex;
-        justify-content: center;
+        justify-content: center; // Centra el menú horizontalmente
 
         ul {
             list-style-type: none;
             padding: 0;
-            text-align: center;
 
             li {
-                margin: 5px 0;
+                display: inline; // Alinea los elementos en línea
+                margin: 0 15px; // Espacio horizontal entre los elementos del menú
             }
         }
     }
 
-    .footer-designed {
-        font-size: 14px;
-        margin: 10px 0;
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
         text-align: center;
+
+        .social-media {
+            margin: 15px 0;
+            
+            a {
+                margin: 0 10px;
+                color: #E8AF09;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .footer-designed {
+            font-size: 14px;
+            margin: 10px 0;
+        }
     }
 
     p {
@@ -504,15 +528,6 @@ section {
         &:hover {
             text-decoration: underline;
         }
-    }
-}
-
-.social-media {
-    margin: 15px 0;
-    text-align: center;
-
-    a {
-        margin: 0 10px;
     }
 }
 
